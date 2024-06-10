@@ -1,0 +1,211 @@
+{
+  "ES": {
+
+    "LAYOUTS": {
+      "HEAD": {
+        "lang_html_code": "es",
+        "descrip_txt" : "Información sobre el Festival de Cocina de Marinella.",
+        "keywords_txt" : "Marinella, concurso, cocina"
+      },
+
+      "HEADER": {
+        "title_txt": "Marinella Cooking Festival",
+        "subtitle_txt": "Información sobre el Festival de Cocina de Marinella.",
+        "NAV_main": {
+          "items": [
+            {
+              "label_txt": "Inicio",
+              "fontawesome": "fa-solid fa-house",
+              "link": "home"
+            },
+            {
+              "label_txt": "Los mejores chefs",
+              "fontawesome": "fa-solid fa-trophy",
+              "link": "chefs"
+            },
+            {
+              "label_txt": "Plantilla P3",
+              "fontawesome": "fa-solid fa-images",
+              "link": "plantilla-P3"
+            }
+          ]
+        },
+        "NAV_main_old": {
+          "items": [
+            {
+              "label_txt": "Inicio",
+              "fontawesome": "fa-solid fa-house",
+              "link": "home"
+            },
+            {
+              "label_txt": "Los mejores chefs",
+              "fontawesome": "fa-solid fa-trophy",
+              "link": "chefs"
+            },
+            {
+              "label_txt": "Descubre el festival",
+              "fontawesome": "fa-solid fa-info",
+              "link": "discover"
+            },
+            {
+              "label_txt": "Galería 2023",
+              "fontawesome": "fa-solid fa-images",
+              "link": "year2023"
+            }
+          ]
+        },
+        "NAV_aux": {
+          "items": [
+            {
+              "label_txt": "INICIO",
+              "fontawesome": "fa-house fa-solid",
+              "link": "#locations"
+            },
+            {
+              "label_txt": "Contacto",
+              "fontawesome": "fa-calendar-days fa-regular",
+              "link": "#events"
+            }
+          ]
+        }
+      },
+      "FOOTER": {
+        "external_links": {
+
+        }
+      }
+    },
+
+    "PAGES": {
+
+      "DISCOVER": {
+        "label": "discover",
+        "title_txt": "Descubre el festival",
+
+        "text1_txt": "El Festival de Cocina de Marinella, un evento culinario que se celebra anualmente en la encantadora ciudad costera de Marinella, es el sueño hecho realidad de todo gourmand. Este festival nació hace una década, fruto de la colaboración entre chefs locales y entusiastas de la gastronomía, con el objetivo de poner en el mapa los sabores únicos de la región. Con el tiempo, se ha convertido en un escaparate para que los talentos emergentes y los cocineros establecidos demuestren su creatividad y maestría culinaria.",
+
+        "text2_txt": "El festival no es solo una exhibición de habilidades culinarias, sino también un concurso vibrante y participativo. Los asistentes no solo tienen el privilegio de degustar platillos exquisitos, sino que también juegan un papel crucial como jueces. Cada comensal recibe una \"moneda de sabor\" al entrar, que luego depositarán en la estación del chef cuyo plato les haya parecido sublime. Esta interacción directa entre chefs y comensales añade un sabor especial al evento, haciendo que cada edición sea impredecible y emocionante.",
+        "text2_destacado_txt": "Cada comensal recibe una 'moneda de sabor' al entrar, que luego depositarán en la estación del chef cuyo plato les haya parecido sublime.",
+
+        "text3_txt": "Los platos que se presentan son tan variados como los propios chefs: desde reinterpretaciones audaces de clásicos locales hasta innovadoras fusiones que desafían al paladar. Los ingredientes frescos, muchos de los cuales son recolectados directamente de las granjas y mares cercanos, son los protagonistas indiscutibles. A medida que el sol se pone, el festival se transforma con luces de colores y música en vivo, creando una atmósfera festiva que complementa perfectamente la experiencia culinaria.",
+        "text3_destacado_txt": "Los ingredientes frescos, muchos de los cuales son recolectados directamente de las granjas y mares cercanos, son los protagonistas indiscutibles.",
+
+        "text4_txt": "Ganar en el Festival de Cocina de Marinella es un honor codiciado, no solo por el reconocimiento sino también por el impulso que puede dar a la carrera de un chef. Más que una competencia, el festival es una celebración de la comunidad, la comida y la creatividad. Cada año, los lazos entre los participantes y visitantes se fortalecen, tejiendo historias de amistad y pasión por la cocina que duran mucho más allá del festival.",
+        "text4_destacado_txt": "Más que una competencia, el festival es una celebración de la comunidad, la comida y la creatividad.",
+
+        "PHOTO": [{
+          "file": "discover_winner",
+          "alt_txt": "Imagen de la galería 2023",
+          "caption_txt": null
+        }]
+      },
+
+      "YEAR2023" : {
+        "label": "year2023",
+        "title_txt": "Galería 2023",
+        "gallery": {
+          "PHOTO": [
+            {
+              "file": "chefs_leila_lechuga",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            },
+            {
+              "file": "year2023-1",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            },
+            {
+              "file": "year2023-2",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            },
+            {
+              "file": "year2023-3",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            },
+            {
+              "file": "year2023-4",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            },
+            {
+              "file": "year2023-5",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            },
+            {
+              "file": "year2023-6",
+              "alt_txt": "Imagen de la galería 2023",
+              "caption_txt": null
+            }
+          ]
+        }
+      },
+
+
+
+      "CHEFS": {
+        "label": "chefs",
+        "title_txt": "Los mejores Chefs",
+        "CARD": [
+          {
+            "title_txt": "Carlos Cordero",
+            "descrip_txt": "Maestro del asado, Carlos deleita con su técnica refinada y un toque personal que convierte cada plato en una experiencia culinaria única. Es célebre por su \"Cordero al carbón con aroma de romero\", un festín para los sentidos que encanta a todos los comensales.",
+            "PHOTO": [{
+              "file": "chefs_carlos_cordero",
+              "alt_txt": "Retrato de Carlos Cordero",
+              "caption_txt": null
+            }]
+          },
+          {
+            "title_txt": "Leila Lechuga",
+            "descrip_txt": "Especialista en ensaladas, Leila convierte verduras comunes en obras de arte minimalistas. Admirada por su innovador plato, \"Espirales de aire con esencia de lechuga\", ha demostrado que menos realmente puede ser más en la alta cocina.",
+            "PHOTO": [{
+            "file": "chefs_leila_lechuga",
+            "alt_txt": "Retrato de Leila Lechuga",
+            "caption_txt": null
+            }]
+          },
+          {
+            "title_txt": "Pedro Picante",
+            "descrip_txt": "Con un amor ardiente por los sabores intensos, Pedro es un virtuoso de los platos picantes. Su famoso \"Chili de fuego celestial\" es una explosión de sabor que promete una experiencia vibrante y memorable para los valientes comensales.",
+            "PHOTO": [{
+            "file": "chefs_pedro_picante",
+            "alt_txt": "Retrato de Pedro Picante",
+            "caption_txt": null
+            }]
+          },
+          {
+            "title_txt": "Rafa Rico",
+            "descrip_txt": "Rafa es un innovador de la cocina mediterránea, mezclando sabores tradicionales con técnicas modernas. Su famoso \"Risotto de mariscos al aroma de azafrán\" es aclamado por críticos y comensales por igual, ofreciendo un viaje gustativo por el Mediterráneo en cada bocado.",
+            "PHOTO": [{
+            "file": "chefs_rafa_rico",
+            "alt_txt": "Retrato de Rafa Rico",
+            "caption_txt": null
+            }]
+          },
+          {
+            "title_txt": "María Manteca",
+            "descrip_txt": "María es una artista de la repostería, famosa por sus innovadoras tartas y pasteles que combinan sabores inesperados con una presentación exquisita. Su \"Tarta de queso y limón con mermelada de higo\" es una delicia que ha ganado varios premios, conquistando paladares con su equilibrio perfecto de dulzura y acidez.",
+            "PHOTO": [{
+            "file": "chefs_maria_manteca",
+            "alt_txt": "Retrato de María Manteca",
+            "caption_txt": null
+            }]
+          },
+          {
+            "title_txt": "Petra Pimienta",
+            "descrip_txt": "Petra es conocida por su audacia en la cocina, mezclando especias y sabores de manera magistral. Su especialidad, \"Curry de pollo con cinco pimientas\", es un plato vibrante que despierta todos los sentidos, ofreciendo un verdadero espectáculo gastronómico que ha recibido elogios por su innovación y sabor.",
+            "PHOTO": [{
+            "file": "chefs_petra_pimienta",
+            "alt_txt": "Retrato de Petra Pimienta",
+            "caption_txt": null
+            }]
+          }
+        ]
+      }
+    }
+  }
+}

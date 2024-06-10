@@ -1,0 +1,108 @@
+/* ========================================================================
+   EXTERNAL FONTS
+   ======================================================================== */
+
+
+/* -- https://font.download/font/modern-antiqua-2 ------------------------- */
+
+@font-face {
+  font-family: 'Modern Antiqua';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Modern Antiqua Book'), url('../fonts/ModernAntiqua-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Modern Antiqua';
+  font-style: oblique;
+  font-weight: normal;
+  src: local('Modern Antiqua Book Oblique'), url('../fonts/ModernAntiqua-BookOblique.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Modern Antiqua';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Modern Antiqua Bold'), url('../fonts/ModernAntiqua-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Modern Antiqua';
+  font-style: oblique;
+  font-weight: bold;
+  src: local('Modern Antiqua Bold Oblique'), url('../fonts/ModernAntiqua-BoldOblique.woff') format('woff');
+}
+
+
+
+/* -- https://font.download/font/palatino-lt-black ------------------------- */
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Palatino LT Regular'), url('../fonts/Palatino_LT_Roman.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Palatino LT Italic'), url('../fonts/Palatino_LT_Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Palatino LT Bold'), url('../fonts/Palatino_LT_Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Palatino LT Bold Italic'), url('../fonts/Palatino_LT_Bold_Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Palatino LT Light Regular'), url('../fonts/Palatino_LT_Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: normal;
+  font-weight: 1000;
+  src: local('Palatino LT Black Regular'), url('../fonts/Palatino_LT_Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Palatino LT Light Italic'), url('../fonts/Palatino_LT_Light_Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: normal;
+  font-weight: 550;
+  src: local('Palatino LT Light Bold'), url('../fonts/Palatino_LT_Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: italic;
+  font-weight: 550;
+  src: local('Palatino LT Light Bold Italic'), url('../fonts/Palatino_LT_Medium_Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Palatino LT';
+  font-style: italic;
+  font-weight: 1000;
+  src: local('Palatino LT Black Italic'), url('../fonts/Palatino_LT_Black_Italic.woff') format('woff');
+}

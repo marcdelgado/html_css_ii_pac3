@@ -1,0 +1,233 @@
+/* ========================================================================
+   LAYOUT THEME
+   Here, only change fonts and colors !!
+   ======================================================================== */
+
+
+/* === BODY / BASE ======================================================== */
+
+/* --- Body / Base - Mobile and old devices first first ------------------- */
+
+body{
+  background-color: #f1f1f1;
+  background-image: linear-gradient(45deg, #e5e5e5 50%, #f1f1f1 50%);
+  background-size: 4px 4px;
+  opacity: 1;
+}
+
+/* --- Body / Base - desktop only ----------------------------------------- */
+
+@media screen and (orientation: landscape) and (width >= $media-width-transition) {
+  .remove-this-selector{
+    color: gray;
+  }
+}
+
+
+
+
+/* === HEADER LAYOUT ====================================================== */
+
+/* --- Header layout - Mobile and old devices first first ----------------- */
+
+.header-layout {
+  font-family: $header-secondary-font;
+  color: $header-secondary-color;
+  background-color: rgb(0 0 0 / 100%);
+
+  &__pre-header {
+    & > * {
+      font-size: 1.2rem;
+      color: $header-secondary-color;
+    }
+
+    &__world-icon {
+      i {
+        font-size: 30px;
+      }
+    }
+
+  }
+
+  &__menu-hr{
+    background-color: $header-secondary-color;
+  }
+
+  &__main-header{
+    &__title-box{
+      &__title{
+        font-family: $header-primary-font;
+        font-size: 1rem;
+        font-weight: bold;
+        color: $header-primary-color;
+      }
+    }
+
+    &__hamburger-icon {
+      .bar1, .bar2, .bar3 {
+        background-color: $header-secondary-color;
+      }
+    }
+
+    &__menu-box{
+      font-family: $header-secondary-font;
+      font-size: 1.3rem;
+      background-color: black;
+
+      a {
+        color: $header-link-color;
+        transition: color $transition-time ease;
+
+        &::after {
+          background-color: $header-hover-line-color;
+          opacity: 0;
+          transition: opacity $transition-time, transform $transition-time;
+        }
+
+        &:hover {
+          color: $header-hover-color;
+
+          &::after {
+            opacity: 1;
+            transform: translate3d(0, 0.3em, 0);
+          }
+        }
+
+        &:focus::after {
+          opacity: 1;
+          transform: translate3d(0, 0.3em, 0);
+        }
+      }
+
+    }
+  }
+}
+
+/* --- Header layout - desktop only --------------------------------------- */
+
+@media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+  .header-layout{
+    background-color: black;
+
+    &__main-header {
+      &__title-box {
+        &__title {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    &__main-header__menu-box{
+      background-color: rgb(0 0 0 / 0%);
+    }
+  }
+
+
+}
+
+
+
+
+/* === MAIN / CONTENT ===================================================== */
+
+/* --- Main / Content - Mobile and old devices first first ---------------- */
+
+.main-layout{
+  .remove-this-selector{
+    color: gray;
+  }
+}
+
+
+/* --- Main / Content - desktop only -------------------------------------- */
+
+@media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+  .main-layout {
+    .remove-this-selector {
+      color: gray;
+    }
+  }
+}
+
+
+
+
+/* === FOOTER ============================================================= */
+
+/* --- Footer - Mobile and old devices first first ------------------------ */
+/* stylelint-disable no-descending-specificity */
+.footer-layout{
+  font-family: $header-secondary-font;
+  color: $header-secondary-color;
+  background-color: black;
+
+
+  &__menu{
+    &__title-box{
+      &__title{
+        font-family: $header-primary-font;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: $header-primary-color;
+      }
+    }
+
+    &__menu-box{
+      font-family: $header-secondary-font;
+      font-size: 1.3rem;
+      background-color: black;
+
+      a {
+        color: $header-link-color;
+        transition: color $transition-time ease;
+
+        &::after {
+          background-color: $header-hover-line-color;
+          opacity: 0;
+          transition: opacity $transition-time, transform $transition-time;
+        }
+
+        &:hover {
+          color: $header-hover-color;
+
+          &::after {
+            opacity: 1;
+            transform: translate3d(0, 0.3em, 0);
+          }
+        }
+
+        &:focus::after {
+          opacity: 1;
+          transform: translate3d(0, 0.3em, 0);
+        }
+      }
+
+    }
+  }
+}
+/* stylelint-enable no-descending-specificity */
+
+
+/* --- Footer - desktop only ---------------------------------------------- */
+
+@media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+  .footer-layout {
+    width: 100%;
+    background-color: black;
+
+    &__menu {
+      width: $desktop-fixed-width;
+
+      &__title-box {
+        &__title {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    &__menu__menu-box {
+      background-color: rgb(0 0 0 / 0%);
+    }
+  }
+}
+

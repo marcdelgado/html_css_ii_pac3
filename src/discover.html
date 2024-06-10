@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{LAYOUTS.HEAD.lang_html_code}}">
+<include src="layouts/head.html"></include>
+<body>
+    <include src="layouts/header.html"></include>
+
+    <main class="main-layout discover-page">
+        <!-- PAGE CONTENT STARTS HERE -->
+        <!-- ------------------------------------------------------------------- -->
+
+        <h1>{{{PAGES.DISCOVER.title_txt}}}</h1>
+
+        <p>{{{PAGES.DISCOVER.text1_txt}}}</p>
+
+        <div class="image">
+            <each loop="photo, index in PAGES.DISCOVER.PHOTO">
+                <include src="modules/photo.html"></include>
+            </each>
+        </div>
+
+        <p>{{{PAGES.DISCOVER.text2_txt}}}</p>
+
+        <figure class="note note-primary p-4">
+            <blockquote class="blockquote">
+                <p class="pb-2">
+                    "{{{PAGES.DISCOVER.text2_destacado_txt}}}"
+                </p>
+            </blockquote>
+        </figure>
+
+        <p>{{{PAGES.DISCOVER.text3_txt}}}</p>
+
+        <figure class="note note-primary p-4">
+            <blockquote class="blockquote">
+                <p class="pb-2">
+                    "{{{PAGES.DISCOVER.text3_destacado_txt}}}"
+                </p>
+            </blockquote>
+        </figure>
+
+        <p>{{{PAGES.DISCOVER.text4_txt}}}</p>
+        <!-- ------------------------------------------------------------------- -->
+        <!-- PAGE CONTENT ENDS HERE -->
+    </main>
+    <include src="layouts/footer.html"></include>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* ========================================================================
+   LAYOUT STATES
+   Here, only change attributes relative to states !!
+   ======================================================================== */
+
+
+/* === BODY / BASE ======================================================== */
+
+/* --- Body / Base - Mobile and old devices first first ------------------- */
+
+body{
+  .remove-this-selector--state{
+    color: gray;
+  }
+}
+
+/* --- Body / Base - desktop only ----------------------------------------- */
+
+@media screen and (orientation: landscape) and (width >= $media-width-transition) {
+  body{
+    .remove-this-selector--state{
+      color: gray;
+    }
+  }
+}
+
+
+
+
+/* === HEADER LAYOUT ====================================================== */
+
+/* --- Header layout - Mobile and old devices first first ----------------- */
+
+.header-layout{
+  .remove-this-selector--state{
+    color: gray;
+  }
+}
+
+/* --- Header layout - desktop only --------------------------------------- */
+
+@media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+  .remove-this-selector--state{
+    color: gray;
+  }
+}
+
+
+
+
+/* === MAIN / CONTENT ===================================================== */
+
+/* --- Main / Content - Mobile and old devices first first ---------------- */
+
+.main-layout{
+  .remove-this-selector--state{
+    color: gray;
+  }
+}
+
+
+/* --- Main / Content - desktop only -------------------------------------- */
+
+@media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+  .main-layout {
+    .remove-this-selector--state {
+      color: gray;
+    }
+  }
+}
+
+
+
+
+/* === MAIN / CONTENT ===================================================== */
+
+/* --- Main / Content - Mobile and old devices first first ---------------- */
+
+.footer-layout{
+  .remove-this-selector--state{
+    color: gray;
+  }
+}
+
+
+/* --- Main / Content - desktop only -------------------------------------- */
+
+@media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+  .footer-layout {
+    .remove-this-selector--state {
+      color: gray;
+    }
+  }
+}
+

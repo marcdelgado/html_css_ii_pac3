@@ -1,0 +1,41 @@
+{
+  "params": {
+    "paths": {
+      "fonts": "../assets/fonts",
+      "images": "../assets/images",
+      "gallery": "../assets/images/gallery",
+      "scripts": "../assets/scripts",
+      "styles": "../assets/styles"
+    },
+    "viewports": [640, 1280, 2560],
+    "max_resol": 2560
+  },
+
+  "author": {
+    "name": "Marc Delgado",
+    "email": "marcdelgado@gmail.com",
+    "license": "GPL3",
+    "url": "https://www.dalealenter.com"
+  },
+  "LANG": {
+    "label": "Language: ",
+    "fontawesome": "fa-house fa-solid",
+    "items": [
+      {
+        "key": "ES",
+        "label": "Español",
+        "suffix": "es"
+      },
+      {
+        "key": "EN",
+        "label": "English",
+        "suffix": "en"
+      },
+      {
+        "key": "CA",
+        "label": "Català",
+        "suffix": "ca"
+      }
+    ]
+  }
+}

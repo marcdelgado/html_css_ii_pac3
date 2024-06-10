@@ -1,0 +1,79 @@
+/* ========================================================================
+   FOOTER LAYOUT
+   ======================================================================== */
+@use "../variables";
+
+@layer footer-layout{
+  /* --- MOBILE AND OLD DEVICES first --------------------------------------- */
+
+  /* Mobile and common styles. Desktop overwrites below. */
+
+  .footer-layout{
+    &__contact{
+      display: flex;
+      flex-direction: row;
+      place-content: space-between space-between;
+      align-items: center;
+      max-width: $desktop-fixed-width;
+
+      &__left-side, &__right-side{
+        width: 100%;
+      }
+    }
+
+    &__menu{
+      display: none;
+      overflow: visible;
+
+      &.deployed{
+        position: absolute;
+        top: $header-mobile-bar-thickness;
+        left: 0;
+        display: block;
+        width: 100%;
+        border-top: white solid 1px;
+      }
+
+      a {
+        position: relative;
+        display: block;
+        padding: 0;
+
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 0.15em;
+          content: '';
+        }
+      }
+    }
+  }
+
+
+
+
+  /* --- DESKTOP only ------------------------------------------------------- */
+
+  /* Overwrite mobile styles here. */
+
+  @media screen and (orientation: landscape) and (width >= $media-width-transition) {
+    .footer-layout{
+      display: block;
+
+      &__menu{
+        display: flex;
+        flex-direction: row;
+        place-content: space-between space-between;
+        align-items: center;
+        max-width: $desktop-fixed-width;
+
+        &__menu-box {
+          display: flex;
+          place-items: center flex-end;
+        }
+      }
+    }
+  }
+}

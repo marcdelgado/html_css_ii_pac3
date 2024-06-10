@@ -1,0 +1,11 @@
+<figure class="photo-module overflow-hidden">
+    <picture class="photo-module__picture transition-all duration-500 hover:scale-105">
+        <each loop="size, index in params.viewports">
+            <source media="(max-width:{{size}}px and max-height:{{size}}px)" srcset="{{params.paths.gallery}}/{{photo.file}}_{{size}}.webp">
+        </each>
+        <img class="w-full h-auto object-cover transform transition-all duration-500 grayscale grayscale-50 hover:grayscale-0 hover:scale-125 photo-module__picture__img" src="{{params.paths.gallery}}/{{photo.file}}_{{params.max_resol}}.webp" alt="{{alt_txt}}">
+    </picture>
+    <if condition="photo.caption_txt != null">
+        <figcaption class="text-center mt-2 text-sm text-gray-600 photo-module__caption">{{photo.caption_txt}}</figcaption>
+    </if>
+</figure>

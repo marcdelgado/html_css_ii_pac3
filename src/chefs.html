@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{LAYOUTS.HEAD.lang_html_code}}">
+<include src="layouts/head.html"></include>
+<body>
+    <include src="layouts/header.html"></include>
+
+    <main class="main-layout chefs-page">
+    <!-- PAGE CONTENT STARTS HERE -->
+    <!-- ------------------------------------------------------------------- -->
+
+        <section class="flex flex-wrap justify-center py-8 chefs-page__chefs">
+            <h1 class="text-4xl font-bold w-full text-center mb-8">{{{PAGES.CHEFS.title_txt}}}</h1>
+            <div class="flex flex-wrap justify-center w-full max-w-screen-xl mx-auto chefs-page__chefs__cards-group">
+                <each loop="card, index in PAGES.CHEFS.CARD">
+                    <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+                        <include src="modules/card.html"></include>
+                    </div>
+                </each>
+            </div>
+        </section>
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- PAGE CONTENT ENDS HERE -->
+    </main>
+    <include src="layouts/footer.html"></include>
+</body>
+</html>

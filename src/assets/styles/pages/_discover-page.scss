@@ -1,0 +1,24 @@
+
+@layer discover-page{
+  .discover-page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    container: parent;
+
+    h1{
+      display: block;
+      width: 100%;
+    }
+
+    p, figure,{
+      width: 75%;
+    }
+
+    .image{
+      width: 25%;
+    }
+
+  }
+
+}

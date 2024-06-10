@@ -1,0 +1,42 @@
+<header class="bg-gray-800 text-white w-full">
+    <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
+        <div class="flex items-center space-x-2">
+            <p class="text-sm">{{LAYOUTS.HEADER.subtitle_txt}}</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <div>
+            <include src="modules/lang-menu.html"></include>
+        </div>
+    </div>
+    <div class="border-t border-gray-700 max-w-7xl mx-auto"></div>
+    <!-- Lower menu bar - Logo and main menu -->
+    <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
+        <div class="space-y-1 cursor-pointer md:hidden" onclick="switchHamburger()">
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+        </div>
+        <div>
+            <h1 class="text-xl font-bold">{{LAYOUTS.HEADER.title_txt}}</h1>
+        </div>
+        <div class="hidden md:flex space-x-4">
+            <each loop="navitem, key in LAYOUTS.HEADER.NAV_main">
+                <include src="modules/main-menu.html"></include>
+            </each>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden flex-col md:hidden bg-gray-800 text-white w-full space-y-2 p-4 items-center">
+        <each loop="navitem, key in LAYOUTS.HEADER.NAV_main">
+            <include src="modules/main-menu.html"></include>
+        </each>
+    </div>
+</header>
+
+<script>
+    function switchHamburger() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+    }
+</script>

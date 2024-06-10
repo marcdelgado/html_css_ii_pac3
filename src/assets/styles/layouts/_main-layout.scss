@@ -1,0 +1,29 @@
+/* ========================================================================
+   HEADER LAYOUT
+   ======================================================================== */
+@use "sass:math";
+
+@layer main-layout{
+  /* --- MOBILE AND OLD DEVICES first --------------------------------------- */
+
+  /* Mobile and common styles. Desktop overwrites below. */
+
+  .main-layout{
+    width: 100%;
+    margin-top: $header-mobile-bar-thickness;
+  }
+
+
+
+
+  /* --- DESKTOP only ------------------------------------------------------- */
+
+  /* Overwrite mobile styles here. */
+
+  @media screen and (orientation: landscape) and (min-width: $media-width-transition) {
+    .main-layout {
+      width: $desktop-fixed-width;
+    }
+  }
+
+}

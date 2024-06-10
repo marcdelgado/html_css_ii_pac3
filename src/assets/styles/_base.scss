@@ -1,0 +1,45 @@
+/* ========================================================================
+   BASE ATTRIBUTES
+   ======================================================================== */
+@use "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: $base-font-size;
+  scroll-behavior: smooth;
+}
+
+
+.fas, .fa-regular, .fa-solid, .fab, .fa-brands, .fa-globe{
+  padding-right: $base-icon-padding;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, li, span {
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+
+/* --- MOBILE / OLD DEVICES ----------------------------------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+

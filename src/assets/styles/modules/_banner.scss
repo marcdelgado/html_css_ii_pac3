@@ -1,0 +1,42 @@
+/* ========================================================================
+   BANNER MODULE
+   ======================================================================== */
+
+/* --- MOBILE AND OLD DEVICES first --------------------------------------- */
+
+/* Mobile and common styles. Desktop overwrites below. */
+
+.banner-module{
+  width: 100%;
+  height: 50%;
+
+  &__picture{
+    &__img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+
+
+/* --- DESKTOP only ------------------------------------------------------- */
+
+/* Overwrite mobile styles here. */
+
+@media screen and (orientation: landscape) and (width >= $media-width-transition) {
+  .banner-module{
+    width: 100%;
+    height: 50%;
+
+    &__picture{
+      &__img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+/* ========================================================================
+   PHOTO MODULE
+   ======================================================================== */
+
+/* --- MOBILE AND OLD DEVICES first --------------------------------------- */
+
+/* Mobile and common styles. Desktop overwrites below. */
+
+.photo-module{
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+  &__picture{
+    &__img{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+
+
+
+/* --- DESKTOP only ------------------------------------------------------- */
+
+/* Overwrite mobile styles here. */
+
+@media screen and (orientation: landscape) and (width >= $media-width-transition) {
+  .photo-module{
+    display: block;
+  }
+}

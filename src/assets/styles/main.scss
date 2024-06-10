@@ -1,30 +1,64 @@
-/**
- * Use this file to import partials.
- * Do not include SCSS code in this file.
- */
+/* ========================================================================
+    SCSS files entry point
+    SMACSS Schema -  https://smacss.com/book/categorizing/
+   ======================================================================== */
 
-/**
- * Import variables
- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* SCSS Variables */
 @import "variables";
 
-/**
- * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
+/* External fonts and styles */
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/swiper/swiper";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+/* SMACSS Schema -  https://smacss.com/book/categorizing/ */
+
+/* BASE */
+@import "base";
+
+/* TODO: poner el resto de imports en @layer */
+
+/* MODULES */
+/*
+@import "modules/photo";
+@import "modules/card";
+@import "modules/banner";
+@import "modules/lang-menu";
+@import "modules/main-menu";
+*/
+/* STATES */
+/*
+@import "states/layout-states";
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+/* THEMES */
+@import "themes/external-fonts";
+@import "themes/layout-theme";
+@import "themes/module-theme";
+/*
+@import "themes/layout-theme";
+@import "themes/module-theme";
+@layer header-layout, main-layout, footer-layout,
+       home-page, chefs-page, year2023-page, discover-page;
+*/
 
-/**
- * Import layouts
- * It's a best practice to use a different partial for each page
- */
+/* LAYOUTS */
+/*
+@import "layouts/header-layout";
+@import "layouts/main-layout";
+@import "layouts/footer-layout";
+*/
+/* PAGES */
+/*
+@import "pages/home-page";
+@import "pages/chefs-page";
+@import "pages/year2023-page";
+@import "pages/discover-page";
+*/
 
-@import "layouts/home";
 
-/**
- * Do NOT include anything else in this file!
- */
+

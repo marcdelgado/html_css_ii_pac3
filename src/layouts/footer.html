@@ -1,0 +1,37 @@
+<footer class="bg-gray-800 w-full text-white py-8">
+    <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-wrap justify-between mb-8">
+            <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                <form name="MCF_subscription" netlify class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Nombre:</label>
+                        <input type="text" id="name" name="name" value="John" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="surname" class="block text-sm font-medium">Apellidos:</label>
+                        <input type="text" id="surname" name="surname" value="Doe" class="mt-1 p-2 w-full border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <button type="submit" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="w-full md:w-1/2 text-right">
+                <p>Diseñado por Marc Delgado Bonet</p>
+                <p>Trabajo académico para la Universitat Oberta de Catalunya</p>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between p-4 max-w-7xl mx-auto">
+            <div>
+                <h1 class="text-xl font-bold">{{LAYOUTS.HEADER.title_txt}}</h1>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <each loop="navitem, key in LAYOUTS.HEADER.NAV_main">
+                    <include src="modules/main-menu.html"></include>
+                </each>
+            </div>
+        </div>
+    </div>
+</footer>
