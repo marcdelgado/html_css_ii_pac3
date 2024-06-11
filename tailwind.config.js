@@ -7,10 +7,17 @@ module.exports = {
       screens: {
         'desktop': '1260px',
       },
+      backgroundImage: {
+        'home-bg': "url('../../assets/images/gallery/banner_2560.webp')",
+      },
       grayscale: {
         0: '0%',
         50: '50%',
       },
+    },
+    fontFamily: {
+      antiqua: ['Modern Antiqua', 'sans-serif'],
+      palatino: ['Palatino LT', 'sans-serif'],
     },
   },
   variants: {

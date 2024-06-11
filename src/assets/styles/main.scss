@@ -11,54 +11,23 @@
 @import "variables";
 
 /* External fonts and styles */
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "../../../node_modules/swiper/swiper";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
+@import "external-fonts";
 
 /* SMACSS Schema -  https://smacss.com/book/categorizing/ */
 
 /* BASE */
 @import "base";
 
-/* TODO: poner el resto de imports en @layer */
-
 /* MODULES */
-/*
+
 @import "modules/photo";
 @import "modules/card";
-@import "modules/banner";
-@import "modules/lang-menu";
 @import "modules/main-menu";
-*/
-/* STATES */
-/*
-@import "states/layout-states";
- */
-
-/* THEMES */
-@import "themes/external-fonts";
-@import "themes/layout-theme";
-@import "themes/module-theme";
-/*
-@import "themes/layout-theme";
-@import "themes/module-theme";
-@layer header-layout, main-layout, footer-layout,
-       home-page, chefs-page, year2023-page, discover-page;
-*/
 
 /* LAYOUTS */
-/*
+
 @import "layouts/header-layout";
 @import "layouts/main-layout";
 @import "layouts/footer-layout";
-*/
-/* PAGES */
-/*
-@import "pages/home-page";
-@import "pages/chefs-page";
-@import "pages/year2023-page";
-@import "pages/discover-page";
-*/
-
-
 

@@ -2,7 +2,7 @@
     <ul class="space-y-2 md:space-y-0 md:flex md:space-x-4 md:justify-center">
         <each loop="listitem, index in navitem">
             <li class="{{loop.first ? 'first' : ''}} text-center md:text-left">
-                <a href="{{listitem.link}}_{{LAYOUTS.HEAD.lang_html_code}}.html" class="header-item block px-3 py-2 rounded-md text-sm font-medium relative group">
+                <a href="{{listitem.link}}_{{LAYOUTS.HEAD.lang_html_code}}.html" class="header-item block px-3 py-2 rounded-md text-xl font-medium relative group">
                     <i class="{{listitem.fontawesome}}"></i>
                     <span>{{{listitem.label_txt}}}</span>
                     <span class="absolute bottom-0 left-0 w-full h-0.5 bg-[#d20000] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-bottom-right group-hover:origin-bottom-left"></span>
