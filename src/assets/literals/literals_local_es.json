@@ -30,30 +30,6 @@
             }
           ]
         },
-        "NAV_main_old": {
-          "items": [
-            {
-              "label_txt": "Inicio",
-              "fontawesome": "fa-solid fa-house",
-              "link": "home"
-            },
-            {
-              "label_txt": "Los mejores chefs",
-              "fontawesome": "fa-solid fa-trophy",
-              "link": "chefs"
-            },
-            {
-              "label_txt": "Descubre el festival",
-              "fontawesome": "fa-solid fa-info",
-              "link": "discover"
-            },
-            {
-              "label_txt": "Galería 2023",
-              "fontawesome": "fa-solid fa-images",
-              "link": "year2023"
-            }
-          ]
-        },
         "NAV_aux": {
           "items": [
             {

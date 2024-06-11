@@ -1,12 +1,8 @@
 let literals_global = require('./src/assets/literals/literals_global.json');
 let literals_local_ES = require('./src/assets/literals/literals_local_es.json');
-let literals_local_CA = require('./src/assets/literals/literals_local_ca.json');
-let literals_local_EN = require('./src/assets/literals/literals_local_en.json');
 
 const path = require('path');
 
-literals_local_CA.CA = deepMerge(literals_local_CA.CA, literals_local_ES.ES);
-literals_local_EN.EN = deepMerge(literals_local_EN.EN, literals_local_ES.ES);
 
 module.exports = {
   "plugins": {
@@ -16,9 +12,7 @@ module.exports = {
     "posthtml-expressions": {
       "locals": {
         ...literals_global,
-        ...literals_local_ES,
-        ...literals_local_CA,
-        ...literals_local_EN,
+        ...literals_local_ES
       }
     }
   }
