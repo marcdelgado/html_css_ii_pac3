@@ -22,3 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
   observer.observe(main_header);
 
 });
+
+
+function switchHamburger() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+}
